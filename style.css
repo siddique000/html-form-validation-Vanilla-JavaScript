@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(90deg, rgba(53, 252, 223, 1) 0%, rgba(10, 66, 79, 1) 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	width: 100vw;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+	margin: 15px 0;
+	background-color: #fff;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 500px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+	padding: 30px 0;
+}
+
+.header,
+.btn {
+	background: linear-gradient(270deg, rgba(53, 252, 223, 1) 0%, rgba(23, 109, 129, 1) 100%);
+	color: #fff;
+
+}
+
+.header h2 {
+	margin: 0;
+	font-size: 26px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.form {
+	padding: 40px;
+	width: 100%;
+}
+
+.form-control {
+	margin-bottom: 20px;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 8px;
+}
+
+.form-control input {
+	display: block;
+	border: 2px solid #f0f0f0;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 14px;
+	padding: 12px;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: rgb(178, 184, 177);
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	position: absolute;
+	top: 40px;
+	right: 10px;
+	visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+	color: #e74c3c;
+}
+
+.form .btn {
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	color: #fff;
+	padding: 15px 0;
+	display: block;
+	width: 100%;
+	font-size: 17px;
+	margin-top: 22px;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 5s ease;
+}
+
+.form .btn:hover {
+	background: linear-gradient(90deg, rgba(53, 252, 223, 1) 0%, rgba(10, 66, 79, 1) 100%);
+
+}
+
+.form .btn:active {
+	background: linear-gradient(270deg, rgba(53, 252, 223, 1) 0%, rgba(23, 109, 129, 1) 100%);
+}
